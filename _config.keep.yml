@@ -21,10 +21,10 @@ base_info:
   avatar: /images/avatar.jpg
 
   # Website LOGO, You can use local image path or image link
-  logo: /images/logo.svg
+  logo: /images/logo-my.svg
 
   # Website favicon, You can use local image path or image link
-  favicon: /images/logo.svg
+  favicon: /images/logo-my.svg
 
 
 # ---------------------------------------------------------------------------------------
@@ -333,15 +333,14 @@ footer:
 # Docs: https://keep-docs.xpoet.cn/basis/configuration-guide/inject.html
 # ---------------------------------------------------------------------------------------
 inject:
-  enable: false  # Option values: true | false
+  enable: true  # Option values: true | false
   css:
-    -
     # e.g.
     # - /css/custom-1.css
     # - /css/custom-2.css
     # - ...
   js:
-    -
+    - /js/uptime.js
     # e.g.
     # - /js/custom-1.js
     # - /js/custom-2.js

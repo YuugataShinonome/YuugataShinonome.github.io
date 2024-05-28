@@ -254,93 +254,58 @@
 <h2 id="Style-Test"><a href="#Style-Test" class="headerlink" title="Style Test"></a>Style Test</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;Hello,world!&quot;</span> &lt;&lt; endl;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
                 </div>
                 
-                        .post-copyright-info-container {
-  width 100%
-  margin-top 1rem
-  background var(--background-color-2)
-  border-radius calc(var(--box-border-radius) * 0.6)
+                        
+<div class="post-copyright-info-container border-box">
+    <div class="copyright-info-content border-box">
+        <div class="copyright-info-top border-box">
+            <div class="copyright-post-title border-box text-ellipsis">
+                Hello World
+            </div>
 
-  .copyright-info-content {
-    width 100%
-    padding 1.3rem
-    overflow hidden
-    font-size 1rem
+            <div class="copyright-post-link border-box text-ellipsis">
+                2024/05/27/hello-world/
+            </div>
+        </div>
 
+        <div class="copyright-info-bottom border-box">
+            <div class="copyright-post-author bottom-item">
+                <div class="type">
+                    作者
+                </div>
+                <div class="content">東雲夕方</div>
+            </div>
 
-    .copyright-info-top {
-      width 100%
-
-      .copyright-post-title {
-        width 100%
-        color var(--text-color-3)
-        font-size 1.1rem
-      }
-
-      .copyright-post-link {
-        width 100%
-        margin-top 0.2rem
-        color var(--text-color-4)
-      }
-    }
-
-
-    .copyright-info-bottom {
-      display flex
-      justify-content flex-start
-      margin-top 1rem
-
-      .bottom-item {
-        z-index $z-index-10
-        margin-right 1.2rem
-
-        .type {
-          color var(--text-color-4)
-        }
-
-        .content {
-          margin-top 0.2rem
-          color var(--text-color-3)
-        }
-      }
+            <div class="post-time bottom-item">
+                <div class="type">
+                    发布于
+                </div>
+                <div class="content">2024-05-27 10:49</div>
+            </div>
 
 
-      .post-license {
-        .content {
-          i {
-            font-size 1.1rem
-          }
-        }
-      }
-    }
+            <div class="post-license bottom-item">
+                <div class="type">
+                    许可
+                </div>
+                <div class="content tooltip" data-tooltip-content="CC BY-NC-SA 4.0">
+                    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans" target="_blank">
+                        
+                            <i class="fa-brands fa-creative-commons"></i>
+                            <i class="fa-brands fa-creative-commons-by"></i>
+                            <i class="fa-brands fa-creative-commons-nc"></i>
+                            <i class="fa-brands fa-creative-commons-sa"></i>
+                        
+                    </a>
+                </div>
+            </div>
+        </div>
 
-    .copyright-bg {
-      position absolute
-      top 50%
-      right 2rem
-      color var(--copyright-icon-bg-color)
-      font-size 14rem
-      transform translateY(-50%)
-
-      +keep-mobile() {
-        font-size 12rem
-      }
-    }
-  }
-
-
-  .copy-copyright-info {
-    position absolute
-    top 0.5rem
-    right 0.5rem
-    box-sizing border-box
-    padding 0.3rem
-    cursor pointer
-
-    i {
-      color var(--text-color-3)
-    }
-  }
-}
+        <i class="copyright-bg fa-solid fa-copyright"></i>
+    </div>
+    <div class="copy-copyright-info flex-center tooltip" data-tooltip-content="复制版权信息" data-tooltip-offset-y="-2px">
+        <i class="fa-solid fa-copy"></i>
+    </div>
+</div>
 
                 
 
@@ -350,77 +315,27 @@
                     </div>
                     <div>
                         
-                            $share-item-width = 1.8rem
-
-.post-share-container {
-  flex-shrink 0
-
-  .share-list-wrap {
-    display flex
-    justify-content flex-end
-
-    .share-item {
-      width $share-item-width
-      height $share-item-width
-      margin-left 0.5rem
-      padding 0.4rem
-      border-style solid
-      border-width 0.1rem
-      border-radius 50%
-      cursor pointer
-      transition-t("background", "0", "0.3", "ease")
-
-
-      i {
-        color inherit
-        font-size 1rem
-      }
-
-
-      &.qq {
-        color var(--keep-primary-color)
-        border-color var(--keep-primary-color)
-
-        &:hover {
-          color var(--background-color-1)
-          background var(--keep-primary-color)
-        }
-      }
-
-
-      &.wechat {
-        color var(--keep-success-color)
-        border-color var(--keep-success-color)
-
-        img {
-          filter brightness(1) !important
-
-          &[lazyload] {
-            &::before {
-              background #fff !important
-            }
-          }
-        }
-
-        &:hover {
-          color var(--background-color-1)
-          background var(--keep-success-color)
-        }
-      }
-
-
-      &.weibo {
-        color var(--keep-danger-color)
-        border-color var(--keep-danger-color)
-
-        &:hover {
-          color var(--background-color-1)
-          background var(--keep-danger-color)
-        }
-      }
-    }
-  }
-}
+                            <div class="post-share-container border-box">
+    <ul class="share-list-wrap border-box">
+        <li class="qq share-item border-box flex-center tooltip"
+            data-tooltip-content="分享到 QQ"
+        >
+            <i class="fa-brands fa-qq"></i>
+        </li>
+        <li class="wechat share-item border-box flex-center tooltip tooltip-img"
+            data-tooltip-content="分享到微信"
+            data-tooltip-img-tip="微信扫一扫"
+            data-tooltip-img-style="background-color: #fff; top: -10px; padding: 0.6rem 0.6rem 0.1rem 0.6rem;"
+        >
+            <i class="fa-brands fa-weixin"></i>
+        </li>
+        <li class="weibo share-item border-box flex-center tooltip"
+            data-tooltip-content="分享到微博"
+        >
+            <i class="fa-brands fa-weibo"></i>
+        </li>
+    </ul>
+</div>
 
                         
                     </div>
@@ -516,81 +431,24 @@
     <!-- post tools -->
     
         <div class="post-tools right-toc">
-            $li-margin-bottom = 0.8rem
-$post-tool-button-width = 2.5rem
+            <div class="post-tools-container border-box">
+    <ul class="tools-list border-box">
+        <!-- PC TOC show toggle -->
+        
+            <li class="tools-item flex-center toggle-show-toc">
+                <i class="fas fa-list"></i>
+            </li>
+        
 
-.post-tools-container {
-  padding-top var(--component-gap)
+        <!-- PC go comment -->
+        
 
-  .tools-list {
-
-    li {
-      position relative
-      box-sizing border-box
-      width $post-tool-button-width
-      height $post-tool-button-width
-      margin-bottom $li-margin-bottom
-      color var(--text-color-3)
-      font-size 1.2rem
-      background var(--background-color-1)
-      border-radius 50%
-      box-shadow 2px 2px 5px var(--shadow-color)
-      cursor pointer
-
-      &:hover {
-        box-shadow 2px 2px 8px var(--shadow-hover-color)
-      }
-
-      i {
-        color var(--text-color-3)
-      }
-
-
-      &:hover {
-        color var(--background-color-1)
-        background var(--primary-color)
-
-        i {
-          color var(--background-color-1)
-        }
-      }
-
-
-      &:last-child {
-        margin-bottom 0
-      }
-
-
-      &.toggle-show-toc {
-        display none
-      }
-
-
-      &.go-to-comments {
-        .post-comments-count {
-          position absolute
-          top 0
-          right -1rem
-          display none
-          align-items center
-          justify-content center
-          box-sizing border-box
-          min-width 1.1rem
-          height 1.1rem
-          padding 0 0.2rem
-          color var(--badge-color)
-          font-size 12px
-          background var(--badge-background-color)
-          border-radius 0.4rem
-
-          +keep-tablet() {
-            display none !important
-          }
-        }
-      }
-    }
-  }
-}
+        <!-- PC full screen -->
+        <li class="tools-item flex-center full-screen">
+            <i class="fa-solid fa-expand"></i>
+        </li>
+    </ul>
+</div>
 
         </div>
     

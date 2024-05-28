@@ -214,8 +214,8 @@ local_search:
 # Docs: https://keep-docs.xpoet.cn/basis/configuration-guide/comment.html
 # ---------------------------------------------------------------------------------------
 comment:
-  enable: false   # Option values: true | false
-  use: valine     # Option values: valine | gitalk | twikoo | waline | giscus | artalk | disqus
+  enable: true   # Option values: true | false
+  use: twikoo    # Option values: valine | gitalk | twikoo | waline | giscus | artalk | disqus
 
   # Valine
   # See: https://github.com/xCss/Valine
@@ -241,7 +241,7 @@ comment:
   # See: https://github.com/imaegoo/twikoo
   #      https://twikoo.js.org
   twikoo:
-    env_id:          # Environment ID
+    env_id: https://twikoo-gamma-gules.vercel.app/         # Environment ID
     region:          # Environment region, Can be null
     version: 1.6.21  # Twikoo version, default use 1.6.21
 
